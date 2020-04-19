@@ -6,8 +6,8 @@ var started = false;
 var level = 0;
 
 //Start game by pressing a key
-$(document).keydown(function(){
-  if(!started){
+$(document).keydown(function(event){
+  if(!started&&event.which===65){
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
