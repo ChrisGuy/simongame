@@ -5,7 +5,18 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
+//Start game by pressing a key
 $(document).keydown(function(){
+  if(!started){
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
+
+//Start fuctionality with click to enable phone use
+$(document).click(function(){
   if(!started){
     $("#level-title").text("Level " + level);
     nextSequence();
