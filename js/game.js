@@ -16,7 +16,7 @@ $(document).keydown(function(){
 
 
 //Start fuctionality with click to enable phone use
-$("#level-title").click(function(){
+$("#level-title").on("tap",function(){
   if(!started){
     $("#level-title").text("Level " + level);
     nextSequence();
