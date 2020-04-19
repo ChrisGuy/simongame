@@ -22,7 +22,6 @@ body {
   display: inline-block;
   height: 300px;
   width: 300px;
-  border: 10px solid black;
   border-radius: 100%;
 }
 
