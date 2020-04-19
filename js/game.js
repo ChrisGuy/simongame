@@ -16,11 +16,12 @@ $(document).keydown(function(){
 
 
 //Start fuctionality with click to enable phone use
-$(document).on("vclick",function(){
+$("h1").on("click",function(){
   if(!started){
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
+    return false;
   }
 });
 
